@@ -13,11 +13,17 @@ export class VistaInicio extends Vista {
 		/**
 		 * Declaración elementos html
 		 */
-		this.botonListar = document.getElementById('listar')
-		this.botonAlta = document.getElementById('addBtn')
+		// this.botonListar = document.getElementById('listar')
+		// this.botonAlta = document.getElementById('addBtn')
 
-		this.botonListar.onclick = this.pulsarListar.bind(this)
-		this.botonAlta.onclick = this.pulsarAlta.bind(this)
+		this.botonListar = $('#listar')
+		this.botonAlta = $('#addBtn')
+
+		// this.botonListar.onclick = this.pulsarListar.bind(this)
+		// this.botonAlta.onclick = this.pulsarAlta.bind(this)
+
+		this.botonListar.click(this.pulsarListar.bind(this))
+		this.botonAlta.click(this.pulsarAlta.bind(this))
 	}
 
 

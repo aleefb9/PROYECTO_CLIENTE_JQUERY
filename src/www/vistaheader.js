@@ -13,9 +13,11 @@ export class VistaHeader extends Vista{
         /**
 		 * Declaración elementos html
 		 */
-        this.imagenInicio = header.getElementsByTagName('img')[0]
+        // this.imagenInicio = header.getElementsByTagName('img')[0]
+        // this.imagenInicio.onclick = this.pulsarInicio.bind(this)
 
-        this.imagenInicio.onclick = this.pulsarInicio.bind(this)
+        this.imagenInicio = $('#logo')
+        this.imagenInicio.click(this.pulsarInicio.bind(this))
     }
 
     /**

@@ -13,9 +13,11 @@ export class Vista {
 	 */
 	mostrar(ver) {
 		if (ver)
-			this.div.style.display = 'flex'	//Visualizar DIV
+			// this.div.style.display = 'flex'	//Visualizar DIV
+			this.div.show()
 		else
-			this.div.style.display = 'none'	//Ocultar DIV
+			// this.div.style.display = 'none'	//Ocultar DIV
+			this.div.hide()
 	}
 
 }

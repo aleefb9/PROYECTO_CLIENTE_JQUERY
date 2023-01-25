@@ -18,16 +18,23 @@ console.log('Cargado')
 class Controlador{
 	constructor(){
 		this.modelo = new Modelo(this)
-		window.onload = this.iniciar.bind(this)
+		// window.onload = this.iniciar.bind(this)
+		$(document).ready(this.iniciar.bind(this))
 	}
 
 	iniciar(){
-		this.vista = new Vista(this, document.getElementById('divAltas'))
+		// this.vista = new Vista(this, document.getElementById('divAltas'))
 
-		this.header = document.getElementsByTagName('header')[0]
-		this.divInicio = document.getElementById('divInicio')
-        this.divListar = document.getElementById('divListar')
-		this.divAltas = document.getElementById('divAltas')
+		// this.header = document.getElementsByTagName('header')[0]
+		// this.divInicio = document.getElementById('divInicio')
+        // this.divListar = document.getElementById('divListar')
+		// this.divAltas = document.getElementById('divAltas')
+
+		this.header = $('header')
+		this.divInicio = $('#divInicio')
+		this.divListar = $('#divListar')
+		this.divAltas = $('#divAltas')
+		this.vista = new Vista(this, divAltas)
 
 		this.vistaHeader = new VistaHeader(this, this.header)
 		this.vistaInicio = new VistaInicio(this, this.divInicio)
