@@ -2,13 +2,13 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://img.freepik.com/foto-gratis/fondo-espacio-exterior_53876-88651.jpg?w=2000);
+    background-image: url(../../assets/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #body2{
-    background-image: url(https://img.freepik.com/foto-gratis/fondo-espacio-exterior_53876-88651.jpg?w=2000);
+    background-image: url(../../assets/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -72,7 +72,7 @@ div#titulo{
     margin-top: 10%;
     font-size: 60px;
     font-weight: bold;
-    z-index: 1;
+    z-index: 3;
 }
 
 div#titulo span{
@@ -99,6 +99,32 @@ div#titulo button{
     color: #FFF;
 }
 
+#cohete{
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    width: 10%;
+    z-index: 4;
+}
+
+#cohete img{
+    width: 100%;
+    height: auto;
+}
+
+#marciano{
+    position: absolute;
+    top: 500px;
+    right: 10px;
+    width: 10%;
+    z-index: 4;
+}
+
+#marciano img{
+    width: 100%;
+    height: auto;
+}
+
 div#titulo button:hover{
     background-color: #2e225e;
     transition: 1s;
@@ -110,6 +136,7 @@ div#titulo button:hover{
     margin:0 auto;
     overflow:hidden;
     color: #FFF;
+    z-index: 2;
 }
 
 
@@ -557,3 +584,4 @@ ul.estrellas li:nth-child(4), ul.estrellas li:nth-child(9),ul.estrellas li:nth-c
     opacity: 0;
     }
 }
+

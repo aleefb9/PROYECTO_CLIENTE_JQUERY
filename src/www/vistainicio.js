@@ -19,11 +19,18 @@ export class VistaInicio extends Vista {
 		this.botonListar = $('#listar')
 		this.botonAlta = $('#addBtn')
 
+		$( "#cohete" ).draggable()
+		$( "#marciano" ).draggable()
+
+		this.dialog = $( "#dialog")
+		this.dialog.dialog()
+
 		// this.botonListar.onclick = this.pulsarListar.bind(this)
 		// this.botonAlta.onclick = this.pulsarAlta.bind(this)
 
 		this.botonListar.click(this.pulsarListar.bind(this))
 		this.botonAlta.click(this.pulsarAlta.bind(this))
+			
 	}
 
 
