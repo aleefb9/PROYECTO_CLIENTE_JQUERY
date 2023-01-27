@@ -44,9 +44,6 @@ class Controlador{
 		this.vistaInicio.mostrar(true)
 		this.vistaListar.mostrar(false)
 		this.vistaAltas.mostrar(false)
-
-		const sound = document.getElementById('audio')
-		sound.play()
 	}
     /**
 	 * Función para ocultar vistas no visibles
